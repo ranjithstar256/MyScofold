@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
             var tex by rememberSaveable { mutableStateOf("") }
 // i am from Android studio
             // assume i have updated the code
-            
+            // hi i am from ranjith branch
             
             // i am from repostry
             MyScofoldTheme {
