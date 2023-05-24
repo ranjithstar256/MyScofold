@@ -62,15 +62,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             var tex by rememberSaveable { mutableStateOf("") }
-
+// i am from Android studio
             MyScofoldTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
-
 
                     Column() {
                         Button(onClick = { tex="morning" }) {
