@@ -64,6 +64,9 @@ class MainActivity : ComponentActivity() {
             var tex by rememberSaveable { mutableStateOf("") }
 // i am from Android studio
             // assume i have updated the code
+            
+            
+            // i am from repostry
             MyScofoldTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
