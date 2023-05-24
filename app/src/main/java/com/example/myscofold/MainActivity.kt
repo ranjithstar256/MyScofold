@@ -65,6 +65,7 @@ class MainActivity : ComponentActivity() {
 // i am from Android studio
             // assume i have updated the code
             // hi i am from ranjith branch
+            //hi i am Aryanshu
             
             // i am from repostry
             MyScofoldTheme {
