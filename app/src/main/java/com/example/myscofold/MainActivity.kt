@@ -1,6 +1,5 @@
 package com.example.myscofold
 
-import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Context
 import android.os.Bundle
@@ -56,17 +55,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myscofold.ui.theme.MyScofoldTheme
+
 // Blood bank App
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             var tex by rememberSaveable { mutableStateOf("") }
-// i am from Android studio
-            // assume i have updated the code
-            // hi i am from ranjith branch
-            
-            // i am from repostry
+
             MyScofoldTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
@@ -74,32 +70,14 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 
-                    Column() {
-                        Button(onClick = { tex="morning" }) {
-                            Text(text = "click")
-
-                        }
-                        Text(text = tex)
-                    }
+                    ///MainContent(padding = PaddingValues(10.dp) )
+                    CustomScaffold(applicationContext )
 
                 }
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -160,7 +138,10 @@ fun CustomScaffold(applicationContext: Context) {
                   datePicker.show()
                 }
             ) {
-                Icon(Icons.Filled.Add,"")
+                Row(Modifier.padding(10.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
+                    Icon(Icons.Filled.Add,"Compose")
+                    Text(text = "Compose")
+                }
             }
         }
     )
